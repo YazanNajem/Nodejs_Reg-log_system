@@ -1,10 +1,10 @@
-import sql from "mysql";
+import mysql from "mysql";
 
-const db = sql.createConnection({
-    host : process.env.DATABASE_HOST,
-    user : process.env.DATABASE_USER,
-    pass : process.env.DATABASE_PASSWORD,
-    name : process.enc.DATABASE_NAME
-})
+const db = mysql.createConnection({
+    host: process.env.DATABASE_HOST,
+    username: process.env.DATABASE_USER,
+    pass: process.env.DATABASE_PASSWORD,
+    name: process.env.DATABASE_NAME
+});
 
 export default db;
